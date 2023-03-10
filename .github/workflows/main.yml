@@ -16,6 +16,7 @@ jobs:
       - name: Upload pdf
         uses: actions/upload-artifact@v3
         with:
-          name: main
-          path: Thermodynamics.pdf
+          name: Thermodynamics.pdf
+          path: build/Thermodynamics/
+          if-no-files-found: error
   
