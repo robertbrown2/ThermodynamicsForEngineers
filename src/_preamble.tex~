@@ -175,7 +175,7 @@ rightmargin=15pt}
 \newcommand{\redbox}[1]{\color{red}\boxed{\color{black} #1 }}
 \newcommand{\answer}[1]{{\color{red} #1}}
 
-\title{{\Huge \bf Thermodynamics for Engineers}\\
+\title{{\Huge \bf Thermodynamics }\\
   \vspace{0.5 in}
   \includegraphics[width=0.8\textwidth]{CoverImage}
   \vspace{0.5 in}
