@@ -1,0 +1,72 @@
+%\renewcommand{\thesection}{\Alph{section}}
+\renewcommand{\thechapter}{\Alph{chapter}}
+\renewcommand{\thesection}{\Alph{chapter}.\arabic{section}}
+
+%\addcontentsline{toc}{chapter}{Appendices}
+%\chapter*{Appendices}
+\appendixpage
+%\newpage
+
+% Saturation Tables
+\newgeometry{margin=1.0 in}
+\input{appendix/steam_sat.tex}
+
+% Superheated Tables
+\input{appendix/steam_super.tex}
+
+% Compressed Liquid Tables
+\input{appendix/water_compressed.tex}
+\restoregeometry
+
+% p-h diagram for Water
+\newgeometry{margin=0.5 in}
+\section{Steam Pressure-Enthalpy ($p$-$h$) Diagram} \label{app:phsteam}
+\begin{center}
+  \includegraphics[width=.95\textheight, angle=90]{p-h_water}
+\end{center}
+
+% p-h diagram for Water
+\section{Steam Enthalpy-Entropy ($h$-$s$) Diagram}
+\begin{center}
+  \includegraphics[width=.95\textheight, angle=90]{h-s_water}
+\end{center}
+\restoregeometry
+
+\newgeometry{margin=1.0 in}
+\input{appendix/R134a_sat.tex}
+\input{appendix/R134a_super.tex}
+%\section{Superheated Vapor Properties for R134a}
+\restoregeometry
+
+\newgeometry{margin=0.5 in}
+\section{R134a Pressure-Enthalpy ($p$-$h$) Diagram} \label{app:phr134a}
+\begin{center}
+  \includegraphics[width=.95\textheight, angle=90]{p-h_R134a}
+\end{center}
+\section{R134a Enthalpy-Entropy ($h$-$s$) Diagram}
+\begin{center}
+  \includegraphics[width=.95\textheight, angle=90]{h-s_R134a}
+\end{center}
+\restoregeometry
+
+\newgeometry{margin=1.0 in}
+\chapter{Properties of Various Ideal Gases}
+\section{Properties of Select Ideal Gases at 300 K} \label{sec:idealGasProps}
+\input{appendix/idealGasData.tex}
+\section[Ideal Gas Specific Heats of Air]{Ideal Gas Specific Heats of Air\footnotemark[1]} \label{sec:idealGasAir}
+\input{appendix/airIdeal.tex}
+\restoregeometry
+
+\newgeometry{margin=0.5 in}
+\section{Compressibility Charts}
+\begin{center}
+  \includegraphics[width=.95\textheight, angle=90]{compressibility-small}
+\end{center}
+\begin{center}
+  \includegraphics[width=.95\textheight, angle=90]{compressibility-med}
+\end{center}
+%\section{Critical Properties of Phase-Change Fluids}
+\restoregeometry
+
+%\chapter{Psychrometric Chart}
+

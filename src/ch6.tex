@@ -1,0 +1,293 @@
+In this chapter, we take another look at a number of components in thermodynamic systems, using entropy to compare their actual performance to their real performance.  After looking specifically at compressors and turbines, we will be able to revisit the Rankine and Refrigeration cycles, as well as explore the Brayton cycle, which is used in jet engines and gas generators.
+
+\section{Isentropic Efficiency}
+One of the important applications of isentropic processes is in defining the ideal performance of various adiabatic components. These include turbines, compressors, pumps, and aircraft jet nozzles. Before, we have made the statement that steam turbines are designed to be adiabatic, and that any heat loss from the turbine will result in a reduction in output power. Now, however, we can make the statement that the ideal turbine is isentropic. This enables us to evaluate the {\bf isentropic efficiency} of these components.
+
+There are two property diagrams involving entropy in common usage, the temperature-entropy ($T$-$s$) and enthalpy-entropy ($h$-$s$) "Mollier" diagrams. We will find that the $h$-$s$ diagram is extremely useful for evaluating adiabatic turbines and compressors, and complements the $p$-$h$ diagram which we used in Chapter 4 to evaluate entire steam power plants or refrigerator systems. The $h$-$s$ diagram for steam is presented below:
+\nopagebreak[4]%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.9\linewidth]{hs_water}
+  \caption{The Mollier, or $h$-$s$ diagram, for water}
+  \label{fig:hs_water}
+\end{figure}
+\subsection{Isentropic Efficiency of Turbines}
+The important characteristic of the $h$-$s$ diagram is that the ideal adiabatic turbine can be conveniently plotted as a vertical line, allowing an intuitive visual appreciation of the turbine performance. We define the turbine adiabatic efficiency as follows:
+\nopagebreak[4]%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.6\linewidth]{turbine_eff}
+  \caption{An isentropic turbine process (1-2s) shown next to an actual turbine process (1-2a).}
+  \label{fig:turbine_eff}
+\end{figure}
+\begin{equation} \label{eq:turbine_eff}
+  \eta_T = \frac{\rm actual\ work}{\rm isentropic\ work} = \frac{w_a}{w_s} = \frac{h_1 - h_{2a}}{h_1 - h_{2s}}
+\end{equation}
+
+Notice that for the for the actual turbine there will always be an increase in entropy, which means that the turbine adiabatic efficiency will always be less than 100\%.
+
+\begin{example}{Adiabatic Steam Turbine}
+  Consider an adiabatic steam turbine having a turbine adiabatic efficiency $\eta_T$ = 80\%, operating under the conditions shown in the following diagram:
+  
+  \begin{center}
+    \includegraphics[width=0.7\linewidth]{isentropic_turbine_eff}
+  \end{center}
+  \begin{enumerate}[a)]
+  \item Using steam tables, determine the enthalpy and entropy values at station (1) and station (2s) assuming that the turbine is isentropic. \answer{[$h_1$ = 3479 kJ/kg, $s_1$ = 7.764 kJ/kg.K; $h_{2s}$ = 2461 kJ/kg, $s_{2s}$ = $s_1$]}
+  \item From the definition of turbine adiabatic efficiency, and given that $\eta_T$ = 80\%, determine the actual enthalpy and entropy values as well as the temperature at station (2a). \answer{[$h_{2a}$ = 2665 kJ/kg, $s_{2a}$ = 8.38 kJ/kg.K, $T_{2a}$ = 88°C]}
+  \item Plot the actual and isentropic turbine processes (Stations (1)-(2a) and (1)-(2s)) on the enthalpy-entropy $h$-$s$ "Mollier" diagram, and indicate the actual turbine specific work ($w_a$) as well as the isentropic turbine specific work ($w_s$) on the diagram.
+  \item Determine the actual power output of the turbine (kW). \answer{[1629 kW]}
+  \end{enumerate}
+
+  The $h$-$s$ diagram plot follows. Notice that we have indicated all the enthalpy and entropy values (which we determined from the steam tables) on the plot. This allows a check on the feasibility of our results.
+
+  \begin{center}
+    \includegraphics[width=0.8\linewidth]{hs_turbine}
+  \end{center}
+  
+\end{example}
+
+\subsection{Isentropic Efficiency of Compressors}
+
+One of the interesting aspects of compressors is that they can be made more efficient by cooling. The reason why we still consider the adiabatic efficiency of compressors that are normally found in refrigeration, air-condition and heat pump systems is that it is considered to be impractical to cool them. Thus the ideal compressor (absorbing a minimum of power) is considered to be isentropic, and we define compressor adiabatic efficiency as follows:
+\nopagebreak[4]%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{comp_eff}
+  \caption{An isentropic compressor process (1-2s) shown next to an actual turbine process (1-2a).}
+  \label{fig:turbine_eff}
+\end{figure}
+
+\begin{equation}\label{eq:comp_eff}
+  \eta_C = \frac{\rm isentropic\ work}{\rm actual\ work} = \frac{w_s}{w_a} = \frac{h_{2s} - h_{1}}{h_{2a} - h_{1}}
+\end{equation}
+
+Notice that for the actual compressor there will always be an increase in entropy, leading to a compressor adiabatic efficiency which is less than 100\%.
+
+\begin{example}{Adiabatic Compressor}
+  Consider the R134a refrigerator compressor shown below.
+  \begin{center}
+    \includegraphics[width=0.3\linewidth]{comp_example}
+  \end{center}
+
+  \begin{enumerate}[a)]
+  \item Carefully plot the actual and isentropic compression processes on the $h$-$s$ diagram and indicate the actual and isentropic specific work done to drive the compressor on the plot.
+  \item Using R134a refrigerant tables determine the specific work required to drive the compressor \answer{[53.9 kJ/kg]}.
+  \item Using R134a refrigerant tables determine the adiabatic efficiency of the compressor \answer{[$\eta_C$ = 92\%]}.
+  \item Discuss these results and determine if this is a feasible compressor design.
+  \end{enumerate}
+  {\bf Solution:}
+
+  Filling in information from tables for states 1 and 2:
+  \begin{center}
+    \def\arraystretch{1.5}
+    \begin{tabular}{r|c|c|c|l}
+       & State 1 & State 2 & State 2s & \\ \cline{2-4}
+      $p$ & 100 & 1000 & 1000 & kPa \\ \cline{2-4}
+      $T$ & -20 & 60 & ? & °C \\ \cline{2-4}
+      $s$ & 0.972 & 0.985 & 0.972 & kJ/kgK \\ \cline{2-4}
+      $h$ & 239.5 & 293.4 & ? & kJ/kg
+    \end{tabular}
+    \def\arraystretch{1.0}
+  \end{center}
+  
+  \begin{center}
+    \includegraphics[width=0.75\linewidth]{hs_comp1}
+  \end{center}
+  
+  \begin{center}
+    \includegraphics[width=0.6\linewidth]{comp1_eff}
+  \end{center}
+  
+\end{example}
+
+%--------------------------------------------------------------------
+\section{Aircraft Engines and the Brayton Cycle}
+%--------------------------------------------------------------------
+There are many different forms and modifications of aircraft gas turbine engines, and in this course we discuss two variants - the ideal turbojet engine, and the gas turbine engine for usage in helicopters.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.7\linewidth]{turbojet_schema}
+  \caption{A simple diagram showing the five processes that make up a turbojet aircraft engine.}
+  \label{fig:turbojet_schema}
+\end{figure}
+
+The ideal turbojet engine shown schematically in Figure \ref{fig:turbojet_schema} is comprised of the series connection of five components - diffuser, compressor, combustor, turbine, and nozzle. The analysis of the complete system, is best done in terms of the $h$-$s$ (enthalpy-entropy) diagram, which we will develop in class. Throughout the system we assume that the fluid is pure air, and the combustors are considered to be constant-pressure heat-addition devices. Notice that the sole purpose of the turbine is to drive the compressor, the nozzle providing the final kinetic energy increase to drive the aircraft.
+
+The gas turbine engine for usage in helicopters is shown below:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.7\linewidth]{gasturb_schema}
+  \caption{A simple diagram showing the five processes that make up a gas turbine helicopter engine.}
+  \label{fig:gasturb_schema}
+\end{figure}
+
+In this case we see that there is no diffuser or nozzle, and that the turbine section has been replaced by two independent turbines - a "gas generator", or "gassifier" turbine to drive the compressor, and an output turbine to drive the helicopter blades. A typical gas turbine engine of this type is the General Electric T700 engine shown below, which is used in the Army Black Hawk helicopter.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{t700_baseline}
+  \caption{Photograph of the GE T700 engine.}
+  \label{fig:t700_baseline}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{t700_section}
+  \caption{Section view schematic of GE T700 engine.}
+  \label{fig:t700_section}
+\end{subfigure}
+%\caption{}
+%\label{fig:minimalHeatEnginePump}
+\end{figure}
+
+\begin{example}[label=ex:T700]{GE T700 Gas Turbine Engine}
+  We wish to do an ideal thermodynamic analysis of the General Electric T700 gas turbine engine.
+  \begin{center}
+    \includegraphics[width=.8\linewidth]{gas_turbine}
+  \end{center}
+  Notice that there are two turbines operating on independent output shafts. The High Pressure (first) turbine, named the Gas Generator Turbine, is directly connected by a shaft to the compressor. Its sole purpose is to drive the the axial/centrifugal compressor, thus the energy output of this turbine must equal the energy consumed by the compressor. The Low Pressure (second) turbine, named the Power Turbine, is connected via gearing to the helicopter rotor.
+
+  {\bf Note:} Because of the large temperature variation throughout this problem we will need to consider the temperature dependence of the specific heat capacities of air. In the above schematic diagram we see that the temperature extremes of the system are 16°C - 1000°C (289 K - 1273 K), giving an average temperature of 781 K. From the table of Specific Heat Capacities of Air we see that at 800 K, $c_p$ = 1.099 [kJ/kgK] and the ratio of specific heat capacities $\gamma$ = 1.354, thus we use those values throughout this problem.
+  
+  Assume that the compressor and both turbines are isentropic, and that the combustion process occurs at constant pressure (isobaric). Using the information shown on the schematic diagram above, do the following:
+  \begin{enumerate}[a)]
+  \item  Sketch the entire process on an $h$-$s$ diagram, clearly showing the 5 stations on the diagram and the relevant isentropic and constant pressure lines.
+  \item Determine the energy consumed by the compressor \answer{[$w_C$ = -328 kJ/kg]}, and the temperature at the outlet of the compressor \answer{[$T_2$ = 587 K]}.
+  \item Determine the heat energy absorbed by the working gas in the combustion chamber \answer{[$q_H$ = 754 kJ/kg]}.
+  \item Determine the temperature \answer{[$T_4$ = 975 K]} and the pressure \answer{[$p_4$ = 546 kPa]} at the outlet of the gas generator turbine.
+  \item Determine the temperature \answer{[$T_5$ = 627 K]} and energy output of the power turbine \answer{[$w_{PT}$ = 382.5 kJ/kg]}.
+  \item Given that the mass flow rate of the working gas through the system is 4.6 kg/s, determine the power output of the power turbine \answer{[1.76 MW]}.
+  \end{enumerate}
+
+  {\bf Solution:}
+  information shown on the schematic diagram above, do the following:
+  \begin{enumerate}[a)]
+  \item  Sketch the entire process on an $h$-$s$ diagram, clearly showing the 5 stations on the diagram and the relevant isentropic and constant pressure lines.
+
+    Unlike the case with a pure fluid such as steam, the $h$-$s$ diagram is not drawn to scale. Instead, is sketched in order to provide an intuitive graphical understanding of the problem.
+
+    Furthermore, for an ideal gas the enthalpy is proportional to the temperature, hence the y-axis can be considered either an enthalpy or temperature axis. The various temperatures and pressures shown on this diagram are evaluated and plotted as we progress with the solution.
+
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{T700_h_s}
+  \end{center}
+      
+   
+\item Determine the energy consumed by the compressor, and the temperature at the outlet of the compressor.
+
+  Ideally both the compressor and the turbine are isentropic devices, thus given the pressure ratio, in order to determine the temperature we consider the isentropic relations developed for an ideal gas.
+
+  
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{compressor}
+  \end{center}
+  
+\item Determine the heat energy absorbed by the working gas in the combustion chamber.
+  
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{combustor}
+  \end{center}
+  
+\item Determine the temperature and the pressure at the outlet of the gas generator turbine.
+
+  Once more. since both turbines are isentropic, we use the pressure temperature relations developed for an isentropic process of an ideal gas.
+
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{gasgen_turb}
+  \end{center}
+    
+\item Determine the temperature and energy output of the power turbine.
+  
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{power_turb}
+  \end{center}
+\item Given that the mass flow rate of the working gas through the system is 4.6 kg/s, determine the power output of the power turbine.
+
+  \begin{equation*}
+    \dot{W}_{PT} = \dot{m} w_{PT} = 4.6 \frac{\rm kg}{\rm s} \cdot 382.5\frac{\rm kJ}{\rm kg} = 1.76\ {\rm MW}
+  \end{equation*}
+  \end{enumerate}
+
+  Note that the actual power output of the T700 engine is around 1800 hp, which is significantly less than the above value ($\approx$ 2360 hp). This is because we have assumed that the compressor and both turbines are isentropic, which will never occur in practice. In a later problem, we will extend this exercise to consider a non-isentropic compressor and turbines.
+\end{example}
+\newpage
+\begin{example}{T700 Proposed Turbojet Conversion}
+  In Example \ref{ex:T700}, we did an ideal thermodynamic analysis of the General Electric T700 helicopter gas turbine engine. In theory, one could unclamp and remove the power turbine at the rear and replace it with a nozzle to form a turbojet engine.
+
+Consider the schematic diagram of this conversion shown in the figure below:
+  
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{turbojet_T700}
+  \end{center}
+
+  Notice that the $h$-$s$ diagram has retained the same shape and characteristics as that in Example \ref{ex:T700}, with the only difference being that the change in enthalpy on the nozzle gives rise to a kinetic energy increase, rather than work output.
+
+  \begin{center}
+    \includegraphics[width=.8\linewidth]{turbojet_h_s}
+  \end{center}
+
+  On replacing the power turbine with an isentropic jet nozzle, determine the temperature (T5) and exhaust velocity ($V_5$ - m/s). Given that the mass flow rate of the working gas through the system is 4.6 kg/s, determine the thrust force at the outlet of the nozzle (Thrust5 - lbf). [Note: 1 lbf (pound force) = 4.46 N]
+
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{nozzle}
+  \end{center}
+
+\end{example}
+
+\begin{example}{Flying at altitude}
+
+  A theoretical jet engine is used to power a plane's flight at an altitude of 20 km and a speed of 200 m/s.  
+
+  All that is known about the engine is that the compressor's pressure ratio is 18, and the turbine inlet temperature is 1250 K.
+
+  Determine the thrust of the engine if the mass flow of air is 15 kg/s.  Find the thermal efficiency.
+  \vspace{1em}
+  
+  {\bf Solution:}
+
+  There are 6 total states that we need to determine \answer{[Answers using CoolProp]}:
+  \begin{itemize}
+  \item Atmosphere (a) - pressure and temperature at 20 km, with a velocity of 200 m/s \answer{[5474 Pa, 216.65 K]}
+  \item Post-diffuser (1) - the diffuser will convert all of the kinetic energy of the air into enthalpy.  We will assume this is isentropic.  Kinetic energy is typically $KE = 1/2 m V^2$, but we tend to work in mass-specific units, so instead, we will find $ke = 1/2 V^2$.  This is in units of J/kg, so remember to convert to kJ/kg! \answer{[$h_1=$ 362.9 kJ/kg, $p_1$ = 7446 Pa]}
+  \item Post-compressor, ideal (2s) - the compressor has a pressure ratio of 18.  We will assume isentropic for this state. \answer{[$h_{2s}$=668 kJ/kg]}
+  \item Post-compressor, actual (2) - we will use the isentropic efficiency of a compressor (around 80-85 percent, we will use 82\%) to find the new enthalpy of this state, while assuming that the pressure remains the same. \answer{[$h_{2}$=735 kJ/kg]}
+  \item Post-combustion (3) - we know the turbine inlet temperature, and will assume that the pressure remains the same from state 2. \answer{[$h_{3}$=1463 kJ/kg]}
+  \item Post-turbine (4, 4s) - the total amount of work from the turbine ($h_4-h_3$) should be equal to the amount of work from the compressor ($h_2-h_1$).  This is not enough to determine a state by itself.  We assume that the pressure is constant between states 4 and 4s, and use the isentropic efficiency of a turbine (around 85-90 percent, we will use 91\%) to determine the enthalpy at state 4s.  The entropy is known there (same as $s_3$), so we can determine the pressure at state 4s, at which point all information is known for state 4. \answer{[$h_{4}$= 1091 kJ/kg, $h_{4s}$ = 1055 kJ/kg]}
+  \item Post-nozzle (5) - we set the pressure back to atmospheric and assume that the nozzle operates isentropically.  The difference in energy ($h_5-h_4$) will be converted back to kinetic energy.  Remember to convert from kJ/kg to J/kg! \answer{[$h_{5}$=699 kJ/kg]}
+  \end{itemize}
+
+  Once we have all the states, we need to determine the thrust and the thermal efficiency:
+  \begin{itemize}
+  \item Thrust - $T = \dot{m}(V_e - V_i)$
+
+    Once we have both the inlet and outlet velocity, this is relatively trivial.
+    \answer{[Thrust=10.3 kN]}
+  \item Thermal efficiency - $\eta_{th} = \left(ke_{\rm nozzle} - ke_{\rm diffuser}\right)/q_{\rm combustor}$
+
+    We care about the thrust, which is in units of Newtons.  We are putting in energy as heat into the combustor, which is in units of kJ/kg. However, to find efficiency, we need to have consistent units between the two values.  The easiest thing to do is to find the kinetic energy converted within the nozzle and diffuser (since we already have the enthaply values).
+
+    We can rewrite this as:
+    \begin{equation}
+      \eta_{th} = \frac{(h_1-h_a) - (h_4-h_5)}{(h_3-h_2)}
+    \end{equation}
+    \answer{[$\eta_{th}$ = 0.51]}
+  \end{itemize}
+  
+  \vspace{1em}
+  {\bf Important notes:}
+  \begin{itemize}
+  \item We should find the enthalpy at each state at a minimum.  If we are using CoolProp, we need the enthalpy and entropy at each state, at a minimum.  We can avoid finding the actual entropy if we are using the ideal gas assumption, unless we want to plot the cycle on the $h$-$s$ diagram.
+  \item Whichever path we choose (ideal gas vs. CoolProp), we can write a code in Colab to find our states and efficiency.  If you use the ideal gas law, you can actually use Excel instead.  Be sure to choose good values for air properties!
+  \item Pressure ratio is a ratio of pressures (unlike the compression ratio from Chapter 3, which was a ratio of volumes).
+  \end{itemize}
+
+  
+
+  
+\end{example}
+\input{ch6HW.tex}
+

@@ -1,0 +1,29 @@
+\chapter{Steam Tables} \label{ch:appendixSteam}
+Unless otherwise indicated, all data was sourced from the \href{https://webbook.nist.gov/chemistry/fluid/}{NIST Chemistry WebBook}, Accessed Dec. 2021.
+\section{Saturation Properties for Steam - Temperature} \label{app:steam_satT}
+\resetLTcolor
+\begin{longtable}[!ht]{@{\zz\extracolsep{\fill}}cccccccccc}%{p{1cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}}
+%\begin{longtable}[!ht]{cccccccccc}%{p{1cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}}
+%    \centering
+  %    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c}{\bf Temp.} & {\bf Pressure} & \multicolumn{2}{c}{\bf Spec. Volume} & \multicolumn{2}{c}{\bf Int. Energy} & \multicolumn{2}{c}{\bf Enthalpy} & \multicolumn{2}{c}{\bf Entropy} \\
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c}{$T$} & $p$  & $v_f$  & $v_g$  & $u_f$  & $u_g$  & $h_f$ & $h_g$  & $s_f$  & $s_g$  \\ %
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c}{°C} & MPa & $\rm m^3$/kg & $\rm m^3$/kg & kJ/kg & kJ/kg & kJ/kg & kJ/kg & kJ/kgK & kJ/kgK  \\ \hline\endhead 
+\input{appendix/steamSatDataT}
+%    \end{tabular}
+\end{longtable}
+\newpage
+\section{Saturation Properties for Steam - Pressure} \label{app:steam_satP}
+\resetLTcolor
+
+\begin{longtable}[!ht]{@{\zz\extracolsep{\fill}}cccccccccc}%{p{1cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}}
+%\begin{longtable}[!ht]{cccccccccc}%{p{1cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}}
+%    \centering
+  %    \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c}{\bf Pressure} & {\bf Temp.} & \multicolumn{2}{c}{\bf Spec. Volume} & \multicolumn{2}{c}{\bf Int. Energy} & \multicolumn{2}{c}{\bf Enthalpy} & \multicolumn{2}{c}{\bf Entropy} \\
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c}{$p$} & $T$  & $v_f$  & $v_g$  & $u_f$  & $u_g$  & $h_f$ & $h_g$  & $s_f$  & $s_g$  \\ %
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c}{MPa} & °C & $\rm m^3$/kg & $\rm m^3$/kg & kJ/kg & kJ/kg & kJ/kg & kJ/kg & kJ/kgK & kJ/kgK  \\ \hline\endhead 
+\input{appendix/steamSatDataP}
+%    \end{tabular}
+\end{longtable}
+

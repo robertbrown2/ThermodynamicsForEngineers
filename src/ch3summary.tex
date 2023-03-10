@@ -1,0 +1,34 @@
+\section{Summary}
+The main result from this chapter was the explanation of three engine cycles: Stirling, Otto, and Diesel.  Each of these cycles can convert excess heat, typically from combustion, to work.  The Stirling cycle can also use work in order to transfer heat from a cold environment to a hot environment, thus acting as either a heater or a refrigerator.  All of these cycles typically use ideal gases as the working fluid, so the ideal gas law was used in abundance.
+
+In order to analyze these cycles, we introduced the First Law of Thermodynamics:
+\begin{equation*}
+  \Delta U = Q - W,
+\end{equation*}
+which is a statement of the conservation of energy.  The change in internal energy can be determined from the temperature change between states:
+\begin{align*}
+  \Delta U = U_2 - U_1 &= m c_v (T_2 - T_1) & \Delta u = u_2 - u_1 &= c_v (T_2 - T_1)
+\end{align*}
+The work is typically found through integration, which results in the following for special cases:
+\begin{align*}
+  {\rm Isobaric} & &\rightarrow& & W &= mp (v_2 - v_1) = p(V_2 - V_1)\\
+  {\rm Isothermal} & &\rightarrow& & W &= mRT \ln \left(\frac{v_2}{v_1}\right)  = mRT \ln \left(\frac{V_2}{V_1}\right)\\
+  {\rm Adiabatic} & &\rightarrow& & W &= m\:\frac{p_1 v_1 - p_2 v_2}{\gamma - 1} = m c_v (T_2-T_1)\\
+  {\rm Isometric} & &\rightarrow& & W &= 0
+\end{align*}
+
+For the special case of constant pressure, the heat transfer for a process can be found using the constant pressure specific heat, $c_p$:
+
+\begin{equation*}
+  Q = m c_p (T_2 - T_1)
+\end{equation*}
+
+In all other circumstances, the heat transfer can only be determined through the First Law.
+
+Finally, because two of the cycles use adiabatic compression/expansion, it was necessary to develop equations for the properties.  These are summarized below:
+
+\begin{align*}
+  \frac{p_2}{p_1} &= \left(\frac{T_2}{T_1}\right)^{\frac{\gamma}{\gamma -1}} = \left(\frac{v_1}{v_2}\right)^{\gamma} \\
+  \frac{T_2}{T_1} &= \left(\frac{p_2}{p_1}\right)^{\frac{\gamma-1}{\gamma}} = \left(\frac{v_1}{v_2}\right)^{(\gamma -1)} \\
+  \frac{v_2}{v_1} &= \left(\frac{p_1}{p_2}\right)^{\frac{1}{\gamma}} = \left(\frac{T_1}{T_2}\right)^{\frac{1}{(\gamma -1)}}
+\end{align*}
