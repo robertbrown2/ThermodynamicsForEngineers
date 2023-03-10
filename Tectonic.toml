@@ -3,5 +3,5 @@ name = 'Textbook'
 bundle = 'https://ttassets.z13.web.core.windows.net/tlextras-2020.0r0.tar'
 
 [[output]]
-name = 'ThermoForEngineers_03-10-23'
+name = 'ThermoForEngineers'
 type = 'pdf'
