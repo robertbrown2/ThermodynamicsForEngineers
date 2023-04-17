@@ -215,7 +215,7 @@ Typically, anything that extracts work from a moving fluid (either liquid or gas
 Within a turbine, you should expect the pressure, enthalpy, and temperature to decrease while the specific volume increases.  For a well designed steam turbine, the flow should start superheated or supercritical, and end either as saturated steam or as a gas-liquid mixture with a quality of at least 90\%.  If the quality drops too low, the large number of water droplets will begin to erode the turbine blades.
 
 
-Figure \ref{fig:ch4_turbineph} shows a turbine process on a $p$-$h$ diagram, which highlights the drop in pressure and enthalpy, as well as the final state of water being at a fairly high quality.  In Example \ref{ex:ch4_supercrit}, we will see a Rankine cycle with two separate turbines.  In modern power plants, the turbine is often subdivided even further to account for high temperature steam being bled off for various purposes.  This can be seen in Example \ref{ex:ch4FeedwaterHeater}, in which some of the steam is used to preheat the water before boiling.
+Figure \ref{fig:ch4_turbineph} shows a turbine process on a $p$-$h$ diagram, which highlights the drop in pressure and enthalpy, as well as the final state of water being at a fairly high quality.  In Example \ref{ex:RankineReheat}, we will see a Rankine cycle with two separate turbines.  In modern power plants, the turbine is often subdivided even further to account for high temperature steam being bled off for various purposes.  This can be seen in Example \ref{ex:ch4FeedwaterHeater}, in which some of the steam is used to preheat the water before boiling.
 
 % --------------------------------------------------------------------
 \subsection{Compressors and Pumps} \label{sec:ch4_pumps}
@@ -541,7 +541,7 @@ Other modifications to the cycle include getting heat from more than one source 
 % --------------------------------------------------------------------
 The Rankine Cycle with reheat includes a separation between the low pressure and high pressure turbines, which allows for steam to be sent back to the boiler.  The steam is reheated either to around the same temperature as State 1, and is then sent to the low pressure turbine.  As before, the boiler does not change the pressure of the steam in the reheat process.
 
-\begin{example}[label=ex:ch4_supercrit]{Nuclear Power Plant with Reheat}
+\begin{example}[label=ex:RankineReheat]{Nuclear Power Plant with Reheat}
   Modern nuclear power plants typically use pressurized water to transport heat outside of the core.  Because of this, they tend to be rather limited in temperature (one of the benefits of molten salt nuclear reactors is the ability of the salt to transport heat at much higher temperatures).
 
   For this example, we are looking at a steam turbine loosely based off of \href{https://www.ge.com/steam-power/products/steam-turbines}{General Electric's  steam turbines for nuclear applications}.  The high-pressure turbine inlet pressure and temperature will be 7.5 MPa and 300°C, respectively.  After the high-pressure turbine, the steam goes back to the boiler and is again heated to 300°C.  This lower pressure steam is sent to the low-pressure turbine, after which it finally goes through the rest of the cycle.  The diagram for this is shown in the figure below.
@@ -686,10 +686,10 @@ Additionally, we will include consideration of a feedwater heater, which mixes s
     %\label{fig:ch2_example1}
   \end{center}
 
-  Note that only $(1-y)\dot{m}$ of steam goes through States 3-6, while $y\dot{m}$ of steam goes directly from State 2 to 7.  This results in less work output from the LP turbine, but also significantly less energy required from the boiler.  The net effect is better thermal efficiency from the cycle as a whole.  Otherwise, we will use our state definitions to find the enthalpy of each state, and analyze the cycle in a very similar way to Examples \ref{ex:RankineCycle} and \ref{ex:ch4_supercrit}.
+  Note that only $(1-y)\dot{m}$ of steam goes through States 3-6, while $y\dot{m}$ of steam goes directly from State 2 to 7.  This results in less work output from the LP turbine, but also significantly less energy required from the boiler.  The net effect is better thermal efficiency from the cycle as a whole.  Otherwise, we will use our state definitions to find the enthalpy of each state, and analyze the cycle in a very similar way to Examples \ref{ex:RankineCycle} and \ref{ex:RankineReheat}.
 
   \subsubsection*{Property Table}
-  As in Example \ref{ex:ch4_supercrit}, most properties are simple table look-ups, often with interpolation.  States 5 and 6 require either the assumption of equivalence to saturated water at the same temperature, or evaluation with CoolProp.  The property table below was generated solely with CoolProp.  Quantities in black are taken from the problem statement, and quantities in red are calculated.
+  As in Example \ref{ex:RankineReheat}, most properties are simple table look-ups, often with interpolation.  States 5 and 6 require either the assumption of equivalence to saturated water at the same temperature, or evaluation with CoolProp.  The property table below was generated solely with CoolProp.  Quantities in black are taken from the problem statement, and quantities in red are calculated.
   \begin{table}[H]
     \centering
     \def\arraystretch{1.5}
@@ -725,7 +725,7 @@ Additionally, we will include consideration of a feedwater heater, which mixes s
   Thus, 26.9\% of the steam is diverted to the mixer, while 73.1\% is reheated and sent to the LP turbine.
 
   \subsubsection*{Turbine/Pump Work, Boiler/Reheat/Condenser Heat Transfer}
-  The analysis here is nearly identical to that done in Example \ref{ex:ch4_supercrit}, with the exception of some change in State numbers for the pumps.  Additionally, we will wait to lump together the turbines and heats until we can calculate the mass flow rates of steam through each component.
+  The analysis here is nearly identical to that done in Example \ref{ex:RankineReheat}, with the exception of some change in State numbers for the pumps.  Additionally, we will wait to lump together the turbines and heats until we can calculate the mass flow rates of steam through each component.
 
   The turbines are found through the difference in enthalpies:
   \begin{align*}
