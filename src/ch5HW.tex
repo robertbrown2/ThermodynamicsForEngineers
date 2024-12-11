@@ -1,16 +1,71 @@
 \begin{homework}
+  % Section 5.1 Conceptual
+  \question In your own words, describe entropy.
+
+  \question A gas has a temperature of 500 K.  Would you expect the entropy to be higher if the gas has a pressure of 100 kPa or 5 MPa?
+
+%  \question Define a microstate.  How does the concept of microstates relate to entropy?
+
+  % Section 5.2 Conceptual
+%  \question Give an example of a reversible process.  How about an irreversible process?
+  \question What is the difference between reversible and irreversible processes in terms of entropy change?
+  \question Can the entropy in a closed system decrease?  What about an isolated system?
+  % Section 5.3 Conceptual
+  \question Which properties are most natural from a molecular view of matter?
+  \question How can we transfer entropy?
+%  \question How are pressure and temperature similar?
+  % Section 5.4 Conceptual
+  \question What is a reservoir in thermodynamics?
+%  \question How does the Clausius Statement relate to the simple form of the Second Law?
+  \question How do the Clausius and Kelvin-Planck Statements relate to one another?
+
+  % Section 5.5 Conceptual
+  \question Which of the following would increase the Carnot efficiency?
+  \begin{questionparts}
+  \item Increasing the temperature of the hot reservoir.
+  \item Decreasing the temperature of the hot reservoir.
+  \item Increasing the amount of heat transferred from the hot reservoir.
+  \item Decreasing the amount of heat transferred to the cold reservoir.
+  \item Decreasing the temperature of the cold reservoir.
+  \end{questionparts}
+  
+  % Section 5.1 Work-out
+  \question Using CoolProp or tables, determine the entropy of the following states:
+  \begin{questionparts}
+  \item Water at a pressure of 100 kPa and a quality of 1.0. \answer{[7.36 $\frac{\rm kJ}{\rm kg\,K}$]}
+  \item R134a at a pressure of 1 MPa and a temperature of 130°C. \answer{[1.98 $\frac{\rm kJ}{\rm kg\,K}$]}
+  \item Air at a pressure of 10 kPa and a temperature of 200 K. \answer{[4.15 $\frac{\rm kJ}{\rm kg\,K}$]}
+  \item Methane (use ``CH4'' or ``methane'' in CoolProp) at a pressure of 100 kPa and an enthalpy of 200 kJ/kg. \answer{[1.79 $\frac{\rm kJ}{\rm kg\,K}$]}
+  \end{questionparts}
+  % Section 5.2 Work-out
+  % Section 5.3 Work-out
+  \question Air at 1 MPa and 200 K is compressed in a piston adiabatically and reversibly to a pressure of 2 MPa.  Determine the final temperature using:
+  \begin{questionparts}
+  \item The ideal gas adiabatic relations, with $\gamma=1.4$. \answer{[243.8 K]}
+  \item CoolProp. \answer{[244.8 K]}
+  \end{questionparts}
+
+  \question Heat is transferred into 1 kg of liquid water at a constant pressure of 100 kPa and a quality of 0 until it is fully boiled.
+  \begin{questionparts}
+  \item How much heat transfer is necessary to boil the water? \answer{[2257.4 kJ]}
+  \item How much entropy is transferred to the water through heat transfer? \answer{[6.056 kJ/K]}
+  \item Based off the equation $\Delta s = \frac{Q}{T}$, what is the temperature that boiling occurred at? \answer{[372.75 K]}
+  \end{questionparts}
+  
+  % Section 5.4 Work-out
+  % Section 5.5 Work-out
   \question A heat pump is used to meet the heating requirements of a house and maintain it at 20°C. On a day when the outdoor air temperature drops to -10°C it is estimated that the house looses heat at the rate of 10 kW. Under these conditions the actual Coefficient of Performance ($COP_{HP}$) of the heat pump is 2.5.
   \begin{questionparts}
   \item Draw a diagram representing the heat pump system showing the flow of energy and the temperatures.
   \item Determine the actual power consumed by the heat pump \answer{[4 kW]}.
   \item Determine the power that would be consumed by a reversible heat pump under these conditions \answer{[1.02 kW]}.
   \item Determine the power that would be consumed by an electric resistance heater under these conditions \answer{[10 kW]}
-  \item Determine if the performance of the actual heat pump is feasible.
+  \item Is the performance of the actual heat pump possible?
   \end{questionparts}
   \question During an experiment conducted at 25°C, a student measured that a Stirling cycle refrigerator that draws 250W of power has removed 1000kJ of heat from the refrigerated space maintained at -30°C. The running time of the refrigerator during the experiment was 20 min.
   \begin{questionparts}
   \item Draw a diagram representing the refrigerator system showing the flow of energy and the temperatures.
-  \item Determine the actual and reversible coefficients of performance \answer{[COPR = 3.33, COPR,rev = 4.42]}.
-  \item Determine if these measurements are reasonable. \answer{[$COP_R/COP_{R,rev}$ = 75\% > 60\% - not feasible]}. State the reasons for your conclusions. 
+  \item Determine the actual and reversible coefficients of performance \answer{[$\rm COP_R$ = 3.33, $\rm COP_{R,rev}$ = 4.42]}.
+  \item Are these values possible?
   \end{questionparts}
 \end{homework}

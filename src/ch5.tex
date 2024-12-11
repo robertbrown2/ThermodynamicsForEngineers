@@ -1,10 +1,10 @@
-In this chapter, we discuss the Second Law of Thermodynamics, and how it ties to entropy, which is the final property we will discuss in this book.  The Second Law helps us determine which processes are possible, and does so through entropy balance.  We will start with a brief discussion of entropy.
+In this chapter, we will discuss the Second Law of Thermodynamics and its relationship with entropy, which is the final property we will cover in this book. The Second Law helps us determine which processes are possible by considering entropy balance. To begin, we will briefly explain entropy.
 
 %--------------------------------------------------------------------
 \section{Entropy}
 %--------------------------------------------------------------------
 
-Entropy is a property that is typically associated with the disorder of a system.  In other words, when a system is perfectly ordered (crystalline structure, with no atoms out of place), entropy will be at a minimum.  Disorder for a system means that it is hard to tell where an atom or molecule is at any particular point in time.  Figure \ref{fig:molecularEntropy} shows the relative level of disorder for solids, liquids, and gases.
+Entropy is a property that is commonly linked with the level of disorder in a system. When a system is in perfect order (like a crystalline structure with no atoms out of place), the entropy is at a minimum. In contrast, a disordered system makes it difficult to locate a specific atom or molecule at any given time.  Figure \ref{fig:molecularEntropy} shows the relative level of disorder for solids, liquids, and gases.
 
 \begin{figure}[H]
 \centering
@@ -30,14 +30,14 @@ Entropy is a property that is typically associated with the disorder of a system
 \label{fig:molecularEntropy}
 \end{figure}
 
-For solids, atoms are mostly constrained, though there will be some vibration as temperature increases.  This means that there are relatively few options for an atoms location, and thus, minimal disorder.  For liquids, molecules are able to move somewhat freely, but are generally packed closely together with other molecules, which leads to significantly more entropy than for solids.  For gases, molecules are even more free to move than in liquids, with only occasional collisions with other molecules.  Thus, we assume that gases will have more disorder (and more entropy) than either liquids or solids.
+In solids, atoms are primarily fixed in place, with some vibration as temperature increases. This results in relatively few possible locations for the atoms, leading to minimal disorder and low entropy. In liquids, molecules are more mobile but still closely packed, resulting in significantly higher entropy than in solids.  For gases, molecules are even more free to move than in liquids, with only occasional collisions with other molecules.  Thus, we assume that gases will have more disorder (and more entropy) than either liquids or solids.
 
 \subsection{Entropy as a Property}
 %--------------------------------------------------------------------
 
-In addition to the difference between phases, we also know that temperature leads to an increase of the average movement of molecules within a substance.  An increase in temperature, therefore, can be assumed to increase the level of entropy.
+Temperature is another factor that affects entropy. As temperature increases, molecules within a substance move more rapidly.  For this reason, an increase in temperature can be assumed to increase the level of entropy.
 
-Likewise, more volume available for a substance to spread out in leads to more locations for a given molecule to be at a given time.  So larger specific volume is also associated with higher entropy.  Figure \ref{fig:EntropyTv} is a contour plot of entropy on the $T$-$v$ diagram for water.
+Likewise, more volume available for a substance leads to more locations for a given molecule to be at a given time.  Therefore, larger specific volume is also associated with higher entropy.  Figure \ref{fig:EntropyTv} is a contour plot of entropy on the $T$-$v$ diagram for water.
 
 \begin{figure}[H]
   \centering
@@ -46,18 +46,18 @@ Likewise, more volume available for a substance to spread out in leads to more l
   \label{fig:EntropyTv}
 \end{figure}%
 
-Finally, thinking of the ideal gas law, higher pressure will lead to lower specific volume for a given temperature, so we typically associate higher pressure with lower entropy.
+Finally, according to the ideal gas law, an increase in pressure at a given temperature results in a decrease in specific volume. Therefore, we typically associate higher pressure with lower entropy because there are fewer potential locations for each molecule to occupy.
 
 \subsection{Entropy in Statistical Mechanics}
 %--------------------------------------------------------------------
 
-There is a way to determine the entropy by considering the number of {\bf microstates} that could make up a given state.  A microstate is a specific arrangement of molecules, including their position, velocity, vibration, and rotation.  States with more entropy could be generated through a greater number of microstates.  Entropy is defined as follows:
+There is a way to determine the entropy by considering the number of {\bf microstates} that could make up a given state.  A microstate is a specific arrangement of molecules, including their position, velocity, vibration, and rotation.  States with more entropy are associated with a larger number of microstates.  Entropy is defined as follows:
 \begin{equation}\label{eq:Boltzmann}
   S = k_B \log \Omega
 \end{equation}
 In Equation \ref{eq:Boltzmann}, $S$ is the entropy of the system in $\frac{\rm kJ}{\rm K}$, $k_B$ is the Boltzmann constant: $1.381\times 10^{-26}\frac{\rm kJ}{\rm K}$, and $\Omega$ is the number of microstates for a given volume, number of atoms, and internal energy of the state.
 
-Note that if only a single arrangement of molecules could define a state, the entropy would be exactly zero.  This occurs for molecules in crystalline solids (restricting their position) with zero energy (restricting their movement).  However, for common use, a reference value is typically chosen to be a zero point.  In this book, for instance, the triple point of water is given both an internal energy and entropy of zero, even though it could be cooled below that point.  In other words, if you see a negative entropy value, it means that it is less than a reference point, not negative in a true sense.
+Note that if only a single arrangement of molecules could define a state, the entropy would be exactly zero.  This occurs for molecules in crystalline solids (restricting their position) with zero energy (restricting their movement).  However, for practical purposes, a reference value is typically chosen to be a zero point.  In this book, for instance, the triple point of water is given both an internal energy and entropy of zero, even though water could theoretically be cooled below this point.  In other words, a negative entropy value indicates that it is lower than the chosen reference point, not that it is negative in a true sense..
 
 %The details of statistical mechanics are far beyond the scope of this book, so for our analysis, we will treat entropy as simply another tool in our toolbox.
 
@@ -65,14 +65,14 @@ Note that if only a single arrangement of molecules could define a state, the en
 \section{Reversibility} \label{sec:reversibility}
 %--------------------------------------------------------------------
 
-Entropy plays a central role as we consider {\bf ideal} processes.  Specifically, entropy is {\bf generated} any time we have a non-ideal process.  Non-ideal processes occur primarily because of friction, but can also occur when we violate the {\bf quasi-equilibrium} assumption that we discussed back in Section \ref{sec:states}.
+Entropy plays a central role as we consider {\bf ideal} processes.  Specifically, entropy is {\bf generated} in any non-ideal process.  Non-ideal processes occur primarily because of friction, but can also occur when we violate the {\bf quasi-equilibrium} assumption that we discussed back in Section \ref{sec:states}.
 
 \subsection{Friction}
 %--------------------------------------------------------------------
 
-Consider a block being pushed up a hill.  In the idealized case (no friction between the block and the hill), all of the work done is transferred to potential energy.  We could theoretically return down the hill, letting the block push us instead, and the net amount of work would be exactly zero.  This situation, where we can return to an initial state with no net loss is a {\bf reversible} process.
+Consider a block being pushed up a hill.  In the idealized case (no friction between the block and the hill), all of the work done is transferred to potential energy.  If we were to return down the hill, allowing the block to push us instead, the net amount of work would be exactly zero.  This situation, where we can return to an initial state with no net loss is a {\bf reversible} process.
 
-In a more real scenario, we could consider friction between the block and the hill.  In this situation, some fraction of our work will be used to overcome friction.  The potential energy at the top of the hill will be less than the amount of work we used to push the block.  If we tried to extract our work this time, we would start at a deficit, and then lose even more as friction stole energy on the way down!  This more realistic situation is an example of an {\bf irreversible} process.
+In a more realistic scenario, we could consider friction between the block and the hill.  In this situation, some fraction of our work will be used to overcome friction.  The potential energy at the top of the hill will be less than the amount of work we used to push the block.  If we tried to extract our work this time, we would start at a deficit, and then lose even more as friction stole energy on the way down!  This more realistic situation is an example of an {\bf irreversible} process.
 
 Thinking about the First Law of Thermodynamics, it may seem like the irreversible process above violates the conservation of energy.  However, friction takes mechanical energy and transforms it into thermal energy.  After pushing the block and returning to the bottom, we have lost some amount of work, but the block has gained an equivalent amount of heat.
 
@@ -143,9 +143,11 @@ Like pressure, temperature emerges out of this molecular understanding of matter
 \end{equation}
 
 Finally, let's define the mechanism of entropy transfer:
+\begin{quoteWithTitle}{Change of Entropy with Heat Transfer}
 \begin{equation} \label{eq:Tds}
   ds = \frac{\partial q}{T}
 \end{equation}
+\end{quoteWithTitle}
 Equation \ref{eq:Tds} states that heat transfer naturally yields a change in entropy, with heat transfer into a system causing an increase of entropy.
 Additionally, more heat transfer is required at higher temperature to cause a change in entropy.  At low temperatures, less heat transfer is required to result in a large change in entropy.
 
@@ -310,7 +312,7 @@ It may be obvious that heat transfer will not naturally happen in this manner, b
   \label{fig:clausiusViolator}
 \end{figure}
 
-It can be seen that in the case where $Q_C = Q_H$, there is more entropy entering the heat pump than is leaving.  This is a direct result of Equation \ref{eq:Tds}: $ds = \frac{\delta q}{T}$.  In order to balance the entorpy transferred through $Q_C$ and $Q_H$, more heat transfer is needed at $T_H$ than at $T_C$.  To get that extra energy without changing the inflow of entropy, we must add work to the heat pump.  The corrected situation is shown on the right side of Figure \ref{fig:clausiusViolator}.
+It can be seen that in the case where $Q_C = Q_H$, there is more entropy entering the heat pump than is leaving.  This is a direct result of Equation \ref{eq:Tds}: $ds = \frac{\delta q}{T}$.  In order to balance the entropy transferred through $Q_C$ and $Q_H$, more heat transfer is needed at $T_H$ than at $T_C$.  To get that extra energy without changing the inflow of entropy, we must add work to the heat pump.  The corrected situation is shown on the right side of Figure \ref{fig:clausiusViolator}.
 
 There is an exception implicitly mentioned in the Clausius Statement: devices that do not ``operate on a cycle''.  It is technically possible to remove heat from a cold body and add heat to a hot body without violating the Second Law.  However, the only way this is possible is by increasing the overall entropy inside the device.  If the entropy inside the device increased, there is no way for it to return to its original state {\bf without some other effect}, and therefore it cannot form a cycle.
 
@@ -342,7 +344,7 @@ Bottom line: for a cycle to produce work, it must both accept and reject heat.
 
 \subsection{Equivalence of Kelvin-Planck and Clausius Statements}
 %--------------------------------------------------------------------
-We showed above that the simple form of the Second Law implied both the Kelvin-Planck and Clausius Statements.  It should be no surpise, then, that we are able to show that both statements are equivalent.
+We showed above that the simple form of the Second Law implied both the Kelvin-Planck and Clausius Statements.  It should be no surprise, then, that we are able to show that both statements are equivalent.
 
 First, let us consider the combination of cycles shown on the left side of \ref{fig:ClausiusEquivalence}.  First, we have a heat pump that violates the Clausius Statement, which we have labeled an ``impossible heat pump''.  Simultaneously, we run a perfectly legitimate engine.  The important thing to note here is that the heat transfer through the impossible heat pump perfectly matches the heat flow through the engine (the part not turned into work).
 
@@ -362,6 +364,7 @@ Thus, each of our statements of the Second Law are functionally equivalent.
 %--------------------------------------------------------------------
 The Carnot cycle is a primarily theoretical cycle that is intended to provide the maximum efficiency between two temperature reservoirs.
 
+
 Heat transfer into the system occurs isothermally at the highest temperature possible, to minimize the entropy transferred into the system.  Likewise, heat transfer out of the system occurs at the lowest temperature possible, to maximize the entropy transferred out of the system.  Temperature change occurs adiabatically and isentropically.  Figure \ref{fig:carnotph} shows the cycle drawn on a $p$-$h$ diagram. %Figure \ref{fig:carnotEngine} shows the Carnot cycle in a closed system, while Figure \ref{fig:carnotph} shows the cycle in a $p$-$h$ diagram.
 
 %\begin{figure}[H]
@@ -371,14 +374,15 @@ Heat transfer into the system occurs isothermally at the highest temperature pos
 %  \label{fig:carnotEngine}
 %\end{figure}
 
+
+Note the frequent switching between constant temperature environments (necessitating ample heat flow) and adiabatic environments (requiring zero heat flow).  This change of environment is the primary problem with the Carnot cycle for practical purposes.
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=.9\linewidth]{CarnotPH}
   \caption{A Carnot Cycle plotted on a $p$-$h$ diagram for steam.}
   \label{fig:carnotph}
 \end{figure}
-
-Note the frequent switching between constant temperature environments (necessitating ample heat flow) and adiabatic environments (requiring zero heat flow).  This change of environment is the primary problem with the Carnot cycle for practical purposes.
 
 As you can see in Figure \ref{fig:carnotph}, the difference in entropy between states 1 and 2 perfectly matches the difference between states 3 and 4.  In other words, the entropy entering the system through $Q_H$ exits the system through $Q_C$.
 
@@ -431,7 +435,7 @@ As always, the coefficient of performance for a heat pump will be exactly 1 larg
   \item Draw a diagram representing the heat pump system showing the flow of energy and source and sink temperatures.
   \item Determine the maximum possible Coefficient of Performance of a hot water heater ($COP_{HW}$) that could be obtained by a reversible heat pump.
   \item Determine the maximum possible Coefficient of Performance of a space cooling air conditioner ($COP_{AC}$) that could be obtained by a reversible heat pump.
-  \item The actual Coefficients of Performance for the system shown above were found to be $COP_{HW} = 4.41$ and $COP_{AC} = 3.41$.  Compare those values to those of the reversible heat pump determine if the actual heat pump shown above is feasible. State the reasons for your conclusion.
+  \item The actual Coefficients of Performance for the system shown above were found to be $COP_{HW} = 4.41$ and $COP_{AC} = 3.41$.  Compare those values to those of the reversible heat pump determine if the actual heat pump shown above is possible. State the reasons for your conclusion.
   \end{enumerate}
   {\bf Solution:}
   For a), b), and c) we need to reduce the system complexity shown above to an energy flow diagram showing only the basic requirements - cool the air to 20°C and heat the water to 50°C. Given the temperature if the heat source (20°C) and the heat sink (50°C) we can evaluate the respective reversible Coefficients of Performance.
@@ -440,12 +444,13 @@ As always, the coefficient of performance for a heat pump will be exactly 1 larg
     \includegraphics[width=0.7\textwidth]{rev_hotw_ac}
   \end{center}
 
-  For question d) we use the accumulated knowledge that the conditions for thermal and mechanical reversibility are so difficult to realize that no practical heat pump or heat engine can attain more than 50\% to 60\% of the equivalent reversible (Carnot) performance. Thus comparing the actual to the reversible Coefficients of Performance we obtain:
-  \begin{align*}
-    \frac{COP_{HW, act}}{COP_{HW, rev}} &= \frac{4.4}{10.8} = 41\% \quad (<\ 50\%\quad \rightarrow \quad {\rm feasible!}) \\
-    \frac{COP_{AC, act}}{COP_{AC, rev}} &= \frac{3.4}{9.8} = 35\% \quad (<\ 50\%\quad \rightarrow \quad {\rm feasible!})
-  \end{align*}
-  Both coefficients of performance were less than 50\% of their reversible values, meaning that they are indeed feasible.
+  For item d), we expect the actual coefficients of performance to be less than the ideal values.  This is exactly what we see, with 4.4 < 10.8 and 3.4 < 9.8.  Thus, both the heater and AC cycles are possible.
+
+  {\bf Note:} In actuality, we expect that to see significantly smaller actual efficiencies compared to the ideal efficiencies for heat pumps and refrigerators.  The major problems come from the throttle and from the heat transfer in the evaporator and condenser.  The throttle significantly increases the entropy of the fluid, which diverges from reversibility.  In order to transfer heat into the condenser, the fluid must be colder than the hot reservoir.  Narrowing the temperature gap would require one of the following:
+  \begin{enumerate}[a)]
+  \item reduction the total heat transfer, limiting the use of the device
+  \item much more surface area, increasing the size and cost of the device.
+  \end{enumerate}
 \end{example}
 
 \input{ch5HW.tex}

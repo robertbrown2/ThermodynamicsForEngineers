@@ -1,0 +1,5 @@
+\begin{longtable}[!ht]{@{\zz\extracolsep{\fill}}c|cc||c|cc}
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c|}{Altitude} & $p$ & $T$ & Altitude & $p$ & $T$ \\
+  \multicolumn{1}{@{\fullwidthcolor{white}\extracolsep{\fill}}c|}{m} & kPa & K & m & kPa & K  & -\\\hline
+  0 & 101.3 & 288.2 & 20 & 5.53 & 216.7
+\end{longtable}
